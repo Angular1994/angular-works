@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<label>Celsius:</label>
+<input
+  type="number"
+  [(ngModel)]="Celsius"
+  (ngModelChange)="convert($event, 'c')"
+/>
+<br />
+<label>Faranheet:</label>
+<input
+  type="number"
+  [(ngModel)]="Faranheet"
+  (ngModelChange)="convert($event, 'f')"
+/>
